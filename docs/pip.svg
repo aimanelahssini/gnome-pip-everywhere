@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="330" viewBox="0 0 760 330" font-family="Cantarell, 'Inter', 'Segoe UI', sans-serif">
+  <rect width="760" height="330" rx="18" fill="#2b2a33"/>
+  <g font-size="14" fill="#a9a7a4" text-anchor="middle">
+    <text x="130" y="44">Desktop 1</text><text x="380" y="44">Desktop 2</text><text x="630" y="44">Desktop 3</text>
+  </g>
+  <g>
+    <rect x="24" y="56" width="212" height="200" rx="12" fill="#3a3842"/>
+    <rect x="274" y="56" width="212" height="200" rx="12" fill="#3a3842"/>
+    <rect x="524" y="56" width="212" height="200" rx="12" fill="#3a3842"/>
+    <rect x="38" y="70" width="184" height="120" rx="8" fill="#ececec"/><rect x="38" y="70" width="184" height="20" rx="8" fill="#d6d6d6"/>
+    <rect x="288" y="70" width="184" height="130" rx="8" fill="#1e1e1e"/><text x="300" y="104" fill="#7fd27f" font-size="12" font-family="monospace">$ claude</text>
+    <rect x="538" y="70" width="140" height="100" rx="8" fill="#5b4b8a"/>
+  </g>
+  <g>
+    <rect x="132" y="168" width="94" height="64" rx="8" fill="#000" stroke="#2ec27e" stroke-width="2.5"/><path d="M172 188v24l20-12z" fill="#fff"/>
+    <rect x="382" y="168" width="94" height="64" rx="8" fill="#000" stroke="#2ec27e" stroke-width="2.5"/><path d="M422 188v24l20-12z" fill="#fff"/>
+    <rect x="632" y="168" width="94" height="64" rx="8" fill="#000" stroke="#2ec27e" stroke-width="2.5"/><path d="M672 188v24l20-12z" fill="#fff"/>
+  </g>
+  <text x="40" y="290" fill="#e8e6e3" font-size="17">Picture-in-picture videos stay on top and come with you to every desktop.</text>
+  <text x="40" y="314" fill="#a9a7a4" font-size="15">Works for Chrome, Firefox and Electron apps like Stremio. Nothing to set up.</text>
+</svg>

@@ -1,0 +1,7 @@
+{
+  "uuid": "pip-everywhere@aimanelahssini",
+  "name": "PiP Everywhere",
+  "description": "Picture-in-picture video windows stay on top and follow you to every desktop.",
+  "shell-version": ["50"],
+  "url": "https://github.com/aimanelahssini/gnome-pip-everywhere"
+}
