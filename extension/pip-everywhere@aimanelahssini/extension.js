@@ -1,6 +1,7 @@
 // Picture-in-picture windows (Chromium, Electron apps like Stremio, Firefox) can't ask to stay
 // on top or on all desktops on Wayland, so GNOME treats them like any other window. This makes
-// every PiP window "always on top" and "on all desktops" as soon as it appears, and right-click
+// every PiP window "always on top" and "on all desktops" as soon as it appears (without the zoom-in
+// animation), and right-click
 // on it opens GNOME's window menu (as Firefox's PiP does) to change that, move or close it.
 import Clutter from 'gi://Clutter';
 import Meta from 'gi://Meta';
@@ -62,6 +63,11 @@ export default class PipEverywhereExtension extends Extension {
         if (!this._handled || this._handled.has(w) || !PIP_TITLE.test(w.get_title() ?? ''))
             return;
         this._handled.add(w);
+        // It just appears, without GNOME's zoom-in (only if it isn't on screen yet: this skips
+        // the window's next animation, whatever it is).
+        const actor = w.get_compositor_private();
+        if (actor && !actor.mapped)
+            Main.wm.skipNextEffect(actor);
         w.make_above();
         w.stick();
         console.log(`pip-everywhere: "${w.get_title()}" kept on top, on all desktops`);
