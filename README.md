@@ -18,6 +18,8 @@ Wayland, so the browser's own setting doesn't help.
 
 - **On top, on every desktop.** As soon as a picture-in-picture window appears, it's kept
   **always on top** and **on all desktops**. It appears at once, without GNOME's zoom-in.
+- **Where you put it.** Move or resize a picture-in-picture window, and the next one from that app
+  opens in the same place, at the same size.
 - **Right-click menu.** Right-clicking the video opens GNOME's window menu, like Firefox's
   picture-in-picture does: turn *Always on Top* or *Always on Visible Workspace* off, move,
   resize, take a screenshot or close it. Chrome and Electron apps don't offer one themselves.
@@ -28,7 +30,10 @@ recognizes Chromium and Electron windows ("Picture in picture") and Firefox's
 it for open windows.
 
 For TikTok in Firefox, [TikTok PiP](https://github.com/aimanelahssini/firefox-tiktok-pip) adds
-picture-in-picture that pops out by itself when you leave the tab, and ↑ ↓ to switch videos.
+picture-in-picture that pops out by itself when you leave the tab, and swipes or ↑ ↓ to switch
+videos. PiP Everywhere tells it at once when Firefox goes to another desktop or is minimized: it
+writes the titles of those Firefox windows to `$XDG_RUNTIME_DIR/pip-everywhere/hidden-windows.json`.
+The places it remembers are in `~/.local/state/pip-everywhere/places.json`.
 
 ## Install
 
